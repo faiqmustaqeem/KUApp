@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1001165179843",
+    "firebase_url": "https://ku-app-a3d44.firebaseio.com",
+    "project_id": "ku-app-a3d44",
+    "storage_bucket": "ku-app-a3d44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001165179843:android:5b2c6aad222a2076",
+        "android_client_info": {
+          "package_name": "com.example.faiq.kuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001165179843-keasbdmeemf63qd9ufmer5l3u4jlko6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNLIX5xoWRwdjO6g2sAXn4LbBsCQPqS8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
