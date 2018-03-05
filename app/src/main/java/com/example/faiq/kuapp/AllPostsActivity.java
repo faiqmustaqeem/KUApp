@@ -16,6 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class AllPostsActivity extends AppCompatActivity {
@@ -65,7 +67,7 @@ public class AllPostsActivity extends AppCompatActivity {
                 // whenever data at this location is updated.
 //                String value = dataSnapshot.getValue(String.class);
 //                Log.d(TAG, "Value is: " + value);
-
+                postsModelList.clear();
                 for (DataSnapshot childDataSnapshot : dataSnapshot.getChildren()) {
                    // Log.v(TAG,""+ childDataSnapshot.getKey()); //displays the key for the node
                     String post= childDataSnapshot.child("post").getValue()+"";   //gives the value for given keyname
@@ -89,6 +91,7 @@ public class AllPostsActivity extends AppCompatActivity {
                 }
                // temp1.clear();
                // temp1.add(postsModelList.get(postsModelList.size()-1));
+                Collections.reverse(postsModelList);
                 mAdapter1.notifyDataSetChanged();
 
                 dialog.dismiss();
